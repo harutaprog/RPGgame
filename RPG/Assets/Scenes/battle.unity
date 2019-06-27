@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 275147834}
   - component: {fileID: 275147833}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BattleController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,45 +138,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 275147832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa488cf623c8a3489fd6f21b890aafb, type: 3}
+  m_Script: {fileID: 11500000, guid: ba201d5fb9fe9634795b10cb58c167bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterName: 
-  HP: 0
-  ATK: 0
-  DEF: 0
-  NowHP: 0
-  NowATK: 0
-  NowDEF: 0
-  Actions:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  conditionLists: []
-  Equip_Weapon: 
-  Equip_Body: 
-  Equip_Accessories: 
+  players:
+  - CharacterName: 
+    HP: 100
+    ATK: 10
+    DEF: 10
+    NowHP: 100
+    NowATK: 10
+    NowDEF: 10
+    Actions: []
+    conditionLists: []
+    Equip_Weapon: 
+    Equip_Body: 
+    Equip_Accessories: 
+  enemies: []
+  enemyList: {fileID: 11400000, guid: c4d0a569e09f99a4c8c3d460fabd9fd9, type: 2}
+  action: {fileID: 11400000, guid: 962628ff024dee64c92d2df0b68f1009, type: 2}
+  targetEnemy: 0
 --- !u!4 &275147834
 Transform:
   m_ObjectHideFlags: 0
